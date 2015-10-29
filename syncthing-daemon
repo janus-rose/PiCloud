@@ -8,14 +8,14 @@
 # Short-Description: Syncthing
 # Description:       Syncthing is for backups
 ### END INIT INFO
- 
- 
+
+
 # Documentation available at
 # http://refspecs.linuxfoundation.org/LSB_3.1.0/LSB-Core-generic/LSB-Core-generic/iniscrptfunc.html
 # Debian provides some extra functions though
 . /lib/lsb/init-functions
- 
- 
+
+
 DAEMON_NAME="syncthing"
 DAEMON_USER=pi
 DAEMON_PATH="/usr/bin/syncthing"
@@ -25,9 +25,9 @@ DAEMON_DESC=$(get_lsb_header_val $0 "Short-Description")
 DAEMON_PID="/var/run/${DAEMON_NAME}.pid"
 DAEMON_NICE=0
 DAEMON_LOG='/var/log/syncthing'
- 
+
 [ -r "/etc/default/${DAEMON_NAME}" ] && . "/etc/default/${DAEMON_NAME}"
- 
+
 do_start() {
   local result
  
@@ -60,7 +60,7 @@ do_start() {
 	fi
 	return $result
 }
- 
+
 do_stop() {
 	local result
  
@@ -77,7 +77,7 @@ do_stop() {
 	fi
 	return $result
 }
- 
+
 do_restart() {
 	local result
 	do_stop
@@ -88,19 +88,19 @@ do_restart() {
 	fi
 	return $result
 }
- 
+
 do_status() {
 	local result
 	status_of_proc -p "${DAEMON_PID}" "${DAEMON_PATH}" "${DAEMON_NAME}"
 	result=$?
 	return $result
 }
- 
+
 do_usage() {
 	echo $"Usage: $0 {start | stop | restart | status}"
 	exit 1
 }
- 
+
 case "$1" in
 start)   do_start;   exit $? ;;
 stop)    do_stop;    exit $? ;;
