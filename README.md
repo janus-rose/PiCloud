@@ -49,7 +49,7 @@ We're now in the Pi's setup menu. Use the arrow keys to toggle the following opt
 - Select "finish" 
 - Select "yes" to reboot
 
-If the Pi doesn't ask to reboot or you accidentally select "no", type the command sudo reboot
+If the Pi doesn't ask to reboot or you accidentally select "no", type the command ```sudo reboot```
 
 ## Option 1: Set up BitTorrent Sync (easy)
 
