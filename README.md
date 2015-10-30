@@ -32,20 +32,20 @@ Enter your Pi's IP and your username / password (Default: pi / raspberry), then 
 
 open Terminal and type:
 
-```ssh pi@192.168.X.XX```	## replace “192.168.X.XX” with your Pi's IP
+```ssh pi@192.168.X.XX```	(replace “192.168.X.XX” with your Pi's IP)
 
 Enter your Pi's default password (raspberry), then type “yes” at the security prompt
 
 You're in! Now enter this command:
 
-```sudo raspi-config```		## sudo gives you “super user” status, and will ask for your password
+```sudo raspi-config```		(sudo gives you “super user” status, and will ask for your password)
 
 We're now in the Pi's setup menu. Use the arrow keys to toggle the following options:
 
-- expand filesystem		## tells the Pi to use all the space on the SD card 
-- change user password		## make it strong, memorize it, love it
-- set hostname			## name your Pi! go to Advanced >> Hostname
-- update software		## Advanced >> Update 
+- expand filesystem		(tells the Pi to use all the space on the SD card)
+- change user password		(make it strong, memorize it, love it)
+- set hostname			(name your Pi! go to Advanced >> Hostname)
+- update software		(go to Advanced >> Update)
 - Select "finish" 
 - Select "yes" to reboot
 
@@ -69,7 +69,11 @@ Once your Pi has rebooted, ssh and log in to your Pi again, then type these comm
 
 ```
 sh -c "$(curl -fsSL http://debian.yeasoft.net/add-btsync-repository.sh)"
+```
+```
 sudo apt-get update
+```
+```
 sudo apt-get install btsync
 ```
 
@@ -136,5 +140,7 @@ Your files will begin syncing!
 **Remember to keep your software updated by frequently logging into your Pi and typing:**
 ```
 sudo apt-get update
+```
+```
 sudo apt-get upgrade
 ```
