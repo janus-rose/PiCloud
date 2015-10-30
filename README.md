@@ -46,10 +46,10 @@ We're now in the Pi's setup menu. Use the arrow keys to toggle the following opt
 - change user password		## make it strong, memorize it, love it
 - set hostname			## name your Pi! go to Advanced >> Hostname
 - update software		## Advanced >> Update 
-- Select <finish> 
-- Select <yes> to reboot
+- Select "finish" 
+- Select "yes" to reboot
 
-If the Pi doesn't ask to reboot or you accidentally select <no>, type the command sudo reboot
+If the Pi doesn't ask to reboot or you accidentally select "no", type the command sudo reboot
 
 ## Option 1: Set up BitTorrent Sync (easy)
 
