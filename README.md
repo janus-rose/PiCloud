@@ -117,7 +117,7 @@ sudo sh -c “$(curl -fsSL https://github.com/lawfulintercept/PiCloud/blob/maste
 
 SyncThing is now fully configured and running on your Pi.
 
-Access your Pi's SyncThing interface by typing 192.168.X.XX:8384 into your web browser's address bar (substitute your Pi's IP address instead of “192.168.X.XX”)
+Access your Pi's SyncThing interface by typing 192.168.X.XX:8384 into your web browser's address bar (substitute your Pi's IP address instead of “192.168.X.XX”). Since we've turned on encryption for the interface, a scary security warning will appear in the browser. We don't need to worry about this, so click past the warning ("Advanced >> Proceed" in Chrome, "Permanently Add Exception" in Firefox) and you'll enter the Syncthing interface.
 
 ### c. Connect your devices with SyncThing
 
