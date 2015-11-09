@@ -112,16 +112,16 @@ Search for “syncthing” in the Play store or F-droid
 Log into your Pi with Terminal or Putty, then enter this in the command line:
 
 ```
-sudo sh -c “$(curl -fsSL https://github.com/lawfulintercept/PiCloud/blob/master/syncthing-setup.sh)"
+sh -c “$(curl -fsSL https://github.com/lawfulintercept/PiCloud/blob/master/syncthing-setup.sh)"
 ```
 
-SyncThing is now fully configured and running on your Pi.
+Enter "yes" at the prompt, then hit "y" and enter your password if asked to begin installing SyncThing. After the setup script finishes, SyncThing will be fully configured and running on your Pi.
 
-Access your Pi's SyncThing interface by typing https://192.168.X.XX:8384 into your web browser's address bar (substitute your Pi's IP address instead of “192.168.X.XX”). 
+Now, access your Pi's SyncThing interface by typing https://192.168.X.XX:8384 into your web browser's address bar (substitute your Pi's IP address instead of “192.168.X.XX”). 
 
 *NOTE: Since we've turned on encryption for the interface, you will need to explicitly type the 'https://' before your Pi's address every time to access it*
 
-Now a scary security warning will appear in the browser. We don't need to worry about this, so click past the warning ("Advanced >> Proceed" in Chrome, "Permanently Add Exception" in Firefox) and you'll enter the Syncthing interface.
+A scary security warning will appear in the browser. We don't need to worry about this, so click past the warning ("Advanced >> Proceed" in Chrome, "I Understand the Risks" >> "Add Exception" >> "Confirm" in Firefox) and you'll enter the Syncthing interface.
 
 ### c. Connect your devices with SyncThing
 
