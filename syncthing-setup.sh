@@ -1,10 +1,24 @@
 #!/bin/bash
+
+start_prompt() {
+	ANSWER=
+	while [ "$ANSWER" != "yes" -a "$ANSWER" != "no" ]; do
+		echo -n "${1} [yes/no] "
+		read ANSWER
+	done
+	if [ "$ANSWER" != "yes" ]; then
+		exit ${2:-255}
+	fi
+}
+
+start_prompt "This script will install and configure Syncthing. Are you read to begin?"
+
 ## Add key and repo
 curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
 echo deb http://apt.syncthing.net/ syncthing release | sudo tee /etc/apt/sources.list.d/syncthing-release.list
 ## Install Syncthing
 sudo apt-get update
-sudo apt-get install syncthing xmlstarlet
+sudo apt-get -y install syncthing xmlstarlet
 syncthing -generate="$HOME/.config/syncthing/"
 ## Add Syncthing startup script
 sudo wget -O /etc/init.d/syncthing https://raw.githubusercontent.com/lawfulintercept/PiCloud/master/syncthing-daemon
