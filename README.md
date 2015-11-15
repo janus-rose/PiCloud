@@ -112,7 +112,7 @@ Search for “syncthing” in the Play store or F-droid
 Log into your Pi with Terminal or Putty, then enter this in the command line:
 
 ```
-sh -c “$(curl -fsSL https://github.com/lawfulintercept/PiCloud/blob/master/syncthing-setup.sh)"
+sh -c “$(curl -fsSL https://raw.githubusercontent.com/lawfulintercept/PiCloud/master/syncthing-setup.sh)"
 ```
 
 Enter "yes" at the prompt, then hit "y" and enter your password if asked to begin installing SyncThing. After the setup script finishes, SyncThing will be fully configured and running on your Pi.
