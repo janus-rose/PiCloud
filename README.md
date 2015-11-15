@@ -115,9 +115,9 @@ Log into your Pi with Terminal or Putty, then enter this in the command line:
 sh -c “$(curl -fsSL https://raw.githubusercontent.com/lawfulintercept/PiCloud/master/syncthing-setup.sh)"
 ```
 
-Enter "yes" at the prompt, then hit "y" and enter your password if asked to begin installing SyncThing. After the setup script finishes, SyncThing will be fully configured and running on your Pi.
+Enter "yes" at the prompt and enter your password if asked to begin installing SyncThing. After the setup script finishes, SyncThing will be fully configured and running on your Pi.
 
-Now, access your Pi's SyncThing interface by typing https://192.168.X.XX:8384 into your web browser's address bar (substitute your Pi's IP address instead of “192.168.X.XX”). 
+Now, access your Pi's SyncThing interface by typing https://Your.Pi's.IP.Address:8384 into your web browser's address bar (substitute your Pi's IP address). 
 
 *NOTE: Since we've turned on encryption for the interface, you will need to explicitly type the 'https://' before your Pi's address every time to access it*
 
@@ -133,9 +133,9 @@ ABCD123-ABCD123-ABCD123-ABCD123-ABCD123-ABCD123-ABCD123-ABCD123
 
 To display a device's ID, click “Actions” >> “Show ID” in the upper-right hand corner of the SyncThing interface. (On Android, swipe into the left pull-out menu and tap “Share Device ID”, then send the ID via email, etc)
 
-Now add each folder you want to sync. Click “Add Folder” – In the folder creation menu, specify the folder's path on your local hard drive, then tick the boxes at the bottom to select which devices the folder will be shared with.
+Now add each folder you want to sync. Click “Add Folder” – In the folder creation menu, choose where a location on your local hard drive where you want files to be synced, then tick the boxes at the bottom to select which devices the folder will be shared with.
 
-A message should pop up in the Syncthing GUI of the device you shared with. Click “Approve.”
+A message should pop up in the Syncthing GUI of the device you shared with. Click “Approve” and restart Syncthing if prompted.
 
 Your files will begin syncing!
 
