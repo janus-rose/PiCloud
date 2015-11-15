@@ -16,7 +16,7 @@ It should look like this:
 
 10.0.X.X 
 
-On your home network, an easy way of finding your Pi's IP is by logging into your wireless router (usually by typing 192.168.1.1 in the browser – see manufacturer's instructions) and looking for it in the list of devices connected to the network. Write down this address – you'll need it.
+On your home network, an easy way of finding your Pi's IP is by logging into your wireless router (usually by typing 192.168.1.1 in the browser and entering a username/password – see manufacturer's instructions) and looking for it in the list of devices connected to the network. Write down this address – you'll need it.
 
 *NOTE: This address will change if you connect your Pi to a different port, router or network*
 
