@@ -65,7 +65,7 @@ Search for “btsync” in the appropriate App store
 
 ###b. Install BitTorrent Sync on Pi
 
-Once your Pi has rebooted, ssh and log in to your Pi again, then type these commands:
+Once your Pi has rebooted, ssh and log in to your Pi again, then enter these commands:
 
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/lawfulintercept/PiCloud/master/btsync-setup.sh)"
