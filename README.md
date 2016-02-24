@@ -68,7 +68,7 @@ Search for “btsync” in the appropriate App store
 Once your Pi has rebooted, ssh and log in to your Pi again, then type these commands:
 
 ```
-sh -c "$(curl -fsSL http://debian.yeasoft.net/add-btsync-repository.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/lawfulintercept/PiCloud/master/btsync-setup.sh)"
 ```
 ```
 sudo apt-get update
