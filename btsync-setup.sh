@@ -79,7 +79,7 @@ if [ ! -z ${SUDO} ]; then
 fi
 
 echo "Installing package signing key..."
-if ! $SUDO apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 992A3C9A3C3DE741; then
+if ! $SUDO apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 37F1A037FEF78709; then
 	curl -s http://debian.yeasoft.net/btsync.key | apt-key add --
 	ERR=$?
 	if [ ! ${ERR} ]; then
@@ -128,7 +128,7 @@ $SUDO apt-get install btsync
 echo ""
 echo "*Bittorrent Sync is now installed and running on your Pi*"
 echo ""
-echo "Access the interface by typing "
+echo "Access the interface on your local network by typing "
 echo "http://Your.Pi's.IP.Address:8384 into your web browser's"
 echo "address bar."
 echo ""
