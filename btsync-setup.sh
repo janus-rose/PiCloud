@@ -101,6 +101,9 @@ if which lsb_release 2> /dev/null > /dev/null; then
 	saucy)		;;
 	trusty)		;;
 	utopic)		;;
+	vivid)		;;
+	wily)		;;
+	xenial)		;;
 	# detected debian versions
 	squeeze)	;;
 	wheezy)		;;
